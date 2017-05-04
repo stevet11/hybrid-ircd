@@ -1,0 +1,16 @@
+version: "2"
+
+services:
+  hybrid:
+    image: stevet11/hybrid-ircd
+    ports:
+      - "6665:6665"
+      - "6666:6666"
+      - "6667:6667"
+      - "6668:6668"
+      - "6669:6669"
+      - "6697:6697"
+    volumes:
+      - ./ircd.conf:/home/ircd/etc/ircd.conf
+      - ./ircd.motd:/home/ircd/etc/ircd.motd
+      - ./var:/home/ircd/var
