@@ -20,5 +20,5 @@ RUN apk --update add \
 
 USER ircd
 
+EXPOSE 6665 6666 6667 6668 6669 6697
 CMD ["/home/ircd/bin/ircd","-foreground"]
-
