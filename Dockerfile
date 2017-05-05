@@ -4,7 +4,7 @@ RUN adduser -D ircd -s /bin/false ircd
 WORKDIR /home/ircd
 
 RUN apk --update add \
-  ca-certificates gcc libc-dev make openssl-dev tar wget \
+  ca-certificates libgcc libstdc++ libssl1.0 libcrypto1.0 gcc libc-dev make openssl-dev tar wget \
   && wget https://github.com/ircd-hybrid/ircd-hybrid/archive/8.2.22.tar.gz  \
   && tar xf *.tar.gz \
   && rm *.tar.gz \

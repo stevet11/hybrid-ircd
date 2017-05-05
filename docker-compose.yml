@@ -2,7 +2,7 @@ version: "2"
 
 services:
   hybrid:
-    image: stevet11/hybrid-ircd
+    image: stevet/hybrid-ircd
     ports:
       - "6665:6665"
       - "6666:6666"
