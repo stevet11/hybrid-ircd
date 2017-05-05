@@ -1,3 +1,5 @@
 ircd.*
 *.md
 *.yml
+.git/*
+var/*

@@ -1,4 +1,5 @@
-FROM alpine:latest
+# FROM alpine:latest
+FROM alpine:3.3
 
 RUN adduser -D ircd -s /bin/false ircd
 WORKDIR /home/ircd
